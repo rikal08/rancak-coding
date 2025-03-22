@@ -6,6 +6,7 @@
     <title>Rancak Coding - Jasa Pembuatan Website</title>
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -15,25 +16,7 @@
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        .wa-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            text-decoration: none;
-            font-size: 28px;
-        }
-        .wa-button:hover {
-            background-color: #1ebe5d;
-        }
+        
     </style>
 </head>
 <body>
@@ -162,7 +145,31 @@
         </div>
     </section>
     
+    <!-- client -->
     
+    <section class="our-clients text-white text-center mb-3">
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <h2 class="mb-4">Klien Kami</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/client/1.jpg" class="client-logo" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/client/4.jpg" class="client-logo" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/client/6.jpg" class="client-logo" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/client/5.jpg" class="client-logo" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/client/9.jpg" class="client-logo" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/client/7.jpg" class="client-logo" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/client/2.jpg" class="client-logo" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/client/3.jpg" class="client-logo" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/client/8.jpg" class="client-logo" alt="Client 1"></div>
+                    <div class="swiper-slide"><img src="assets/images/client/10.jpg" class="client-logo" alt="Client 1"></div>
+                   
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- client -->
 
     <!-- Tentang Kami -->
     <section id="about" class="container custom-section">
@@ -266,7 +273,22 @@
         
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                768: { slidesPerView: 4 },
+                1024: { slidesPerView: 5 }
+            }
+        });
+    </script>
     <script>
         document.getElementById("emailForm").addEventListener("submit", function(event) {
             event.preventDefault(); // Mencegah form dikirim
