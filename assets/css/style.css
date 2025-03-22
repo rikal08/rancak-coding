@@ -248,3 +248,18 @@ body {
 .btn-custom:hover {
     background: orange;
 }
+
+/* ############################### */
+/* Tablet (lebar layar maksimal 768px) */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        height: 40px;
+    }
+}
+
+/* Handphone (lebar layar maksimal 480px) */
+@media (max-width: 480px) {
+    .navbar-brand img {
+        height: 30px;
+    }
+}
