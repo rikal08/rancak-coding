@@ -263,3 +263,33 @@ body {
         height: 30px;
     }
 }
+
+
+/* navbar */
+/* Tablet (≤768px) */
+@media (max-width: 768px) {
+    .navbar {
+        width: 90%;
+        padding: 8px 15px;
+        border-radius: 30px;
+    }
+}
+
+/* Handphone (≤480px) */
+@media (max-width: 480px) {
+    .navbar {
+        width: 95%;
+        padding: 8px 12px;
+        border-radius: 20px;
+    }
+    
+    .navbar-brand img {
+        height: 40px; /* Ukuran logo lebih kecil */
+    }
+
+    .navbar-toggler {
+       
+        border-radius: 5px;
+        color: white;
+    }
+}
