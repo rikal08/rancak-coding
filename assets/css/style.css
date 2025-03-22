@@ -1,0 +1,250 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+/* hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('../images/hero-image.jpg');
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Efek Neon Profesional untuk Hero Section */
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: gold;
+    text-shadow: 0 0 8px #3a35a5, 0 0 16px #25215f, 0 0 24px rgba(37, 33, 95, 0.8);
+    animation: softGlow 2s infinite alternate ease-in-out;
+}
+
+/* Efek Neon Halus pada Subtitle */
+.hero p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.9), 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+/* Animasi Glow Lembut */
+@keyframes softGlow {
+    from {
+        text-shadow: 0 0 8px #3a35a5, 0 0 16px #25215f;
+    }
+    to {
+        text-shadow: 0 0 12px #4a45d5, 0 0 20px #3a35a5;
+    }
+}
+
+/* Tombol CTA Neon */
+.cta-btn {
+    background-color: transparent;
+    color: gold;
+    border: 2px solid gold;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 8px rgba(58, 53, 165, 0.8), 0 0 15px rgba(37, 33, 95, 0.9);
+}
+
+.cta-btn:hover {
+    background-color: gold;
+    color: navy;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.9), 0 0 20px rgba(255, 215, 0, 0.8);
+}
+
+
+.cta-btn:hover {
+    background-color: goldenrod;
+    color: #ffffff;
+    box-shadow: 0 0 15px #4a45d5, 0 0 25px #3a35a5;
+    transform: scale(1.05);
+}
+
+
+
+
+/* navbar */
+.navbar {
+    background: white !important;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    padding: 10px 20px;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+.navbar-brand {
+    font-weight: bold;
+    color: #000 !important;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+.navbar-nav .nav-link {
+    color: #000 !important;
+    padding: 10px 15px;
+}
+.navbar-nav .nav-link:hover {
+    color: gold !important;
+}
+
+
+/* layanan */
+/* Neon Effect for Service Cards */
+.layanan-card {
+    background: #1a1a3d;
+    color: #ffffff;
+    border: 2px solid rgba(58, 53, 165, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(58, 53, 165, 0.5), 0 0 20px rgba(37, 33, 95, 0.3);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.layanan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(74, 69, 213, 0.7), 0 0 25px rgba(58, 53, 165, 0.6);
+}
+
+/* Ikon Neon */
+.layanan-icon {
+    font-size: 50px;
+    color: #3a35a5; /* Warna asli navy */
+    text-shadow: 
+        0 0 10px rgba(58, 53, 165, 0.7), 
+        0 0 20px rgba(37, 33, 95, 0.5);
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Efek saat hover */
+.layanan-icon:hover {
+    color: gold;
+    text-shadow: 
+        0 0 10px rgba(255, 215, 0, 0.9), 
+        0 0 20px rgba(255, 215, 0, 0.7), 
+        0 0 30px rgba(255, 215, 0, 0.5);
+    transform: scale(1.1);
+}
+
+/* Animasi Glow */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px rgba(58, 53, 165, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 15px rgba(74, 69, 213, 0.7), 0 0 25px rgba(58, 53, 165, 0.6);
+    }
+}
+
+
+/* produk */
+.pricing-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(58, 53, 165, 0.6);
+    transition: 0.3s ease-in-out;
+}
+.pricing-card:hover {
+    box-shadow: 0 0 25px rgba(42, 38, 122, 0.6);
+    transform: translateY(-5px);
+}
+.pricing-card.highlight {
+    border: 2px solid gold;
+}
+.price {
+    font-size: 32px;
+    font-weight: bold;
+}
+.price span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #ccc;
+}
+.btn-dark:hover {
+    background: #555;
+}
+.btn-highlight {
+    background: gold;
+    color: black;
+}
+.btn-highlight:hover {
+    background: orange;
+}
+
+
+/* kontak */
+
+.custom-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    
+}
+.contact-form {
+    background: #1a1a3d;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(42, 38, 122, 0.6);
+    transition: 0.3s ease-in-out;
+}
+.contact-form:hover {
+    box-shadow: 0 0 25px rgba(72, 64, 216, 0.6);
+}
+.form-control {
+    background: #ffffff;
+    border: none;
+    color: #1a1a3d;
+}
+.form-control::placeholder {
+    color: #aaa;
+}
+.form-control:focus {
+    background: #333;
+    box-shadow: 0 0 10px rgb(255, 183, 0);
+    color: white;
+}
+.btn-custom {
+    background: gold;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+.btn-custom:hover {
+    background: orange;
+}
